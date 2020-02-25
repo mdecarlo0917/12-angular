@@ -1,0 +1,7 @@
+thead {
+    background: #6699CC;
+}
+
+tr:nth-child(2n) {
+    background: #C0C0C0;
+}

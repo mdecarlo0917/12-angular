@@ -1,0 +1,44 @@
+[
+    {
+        "vehicleId": 1,
+        "make": "Jeep",
+        "model": "Wrangler",
+        "licensePlate": "J89374"
+    },
+    {
+        "vehicleId": 2,
+        "make": "Toyota",
+        "model": "Camry",
+        "licensePlate": "J88322"
+    },
+    {
+        "vehicleId": 3,
+        "make": "Ford",
+        "model": "Focus",
+        "licensePlate": "P83948"
+    },
+    {
+        "vehicleId": 4,
+        "make": "Subaru",
+        "model": "Outback",
+        "licensePlate": "M88483"
+    },
+    {
+        "vehicleId": 5,
+        "make": "Toyota",
+        "model": "Corolla",
+        "licensePlate": "PI83928"
+    },
+    {
+        "vehicleId": 6,
+        "make": "BMW",
+        "model": "3 Series",
+        "licensePlate": "43JI83"
+    },
+    {
+        "vehicleId": 7,
+        "make": "Honda",
+        "model": "Civic",
+        "licensePlate": "PP0823"
+    }
+]

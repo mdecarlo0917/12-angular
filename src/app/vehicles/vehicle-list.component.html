@@ -1,0 +1,20 @@
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th (click)="vehicleIdHandler()">Vehicle ID</th>
+                <th>Make</th>
+                <th>Model</th>
+                <th>License Plate</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let vehicle of vehicles">
+                <td><a [routerLink]="['/vehicles', vehicle.vehicleId]">{{vehicle.vehicleId}}</a></td>
+                <td>{{vehicle.make}}</td>
+                <td>{{vehicle.model}}</td>
+                <td>{{vehicle.licensePlate}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
