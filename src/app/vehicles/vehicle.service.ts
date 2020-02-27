@@ -1,37 +1,18 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
 import { IVehicle } from './vehicle';
 
 @Injectable({
     providedIn: 'root'
 })
 export class VehicleService {
+    private vehicleUrl = 'assets/vehicles/vehicles.json';
 
-    getVehicles(): IVehicle[] {
-        return [
-            {
-                "vehicleId": 1,
-                "make": "Jeep",
-                "model": "Wrangler",
-                "licensePlate": "J89374"
-            },
-            {
-                "vehicleId": 2,
-                "make": "Toyota",
-                "model": "Camry",
-                "licensePlate": "J88322"
-            },
-            {
-                "vehicleId": 3,
-                "make": "Ford",
-                "model": "Focus",
-                "licensePlate": "P83948"
-            },
-            {
-                "vehicleId": 4,
-                "make": "Subaru",
-                "model": "Outback",
-                "licensePlate": "M88483"
-            }
-        ];
+    constructor(private http: HttpClient) { }
+
+    getVehicles(): Observable<IVehicle[]> {
+        return this.http.get<IVehicle[]>(this.vehicleUrl);
     }
 }
